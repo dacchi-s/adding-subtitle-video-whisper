@@ -147,20 +147,20 @@ conda activate subtitle-generator
 
 ```bash
 # Generate Japanese subtitles
-python subtitle-generator.py generate --input video.mp4 --output_srt japanese.srt --model large-v3
+python Adding-subtitle-plus-manual-correction-translation.py generate --input video.mp4 --output_srt japanese.srt --model large-v3
 
 # Generate English subtitles (translated from Japanese)
-python subtitle-generator.py generate --input video.mp4 --output_srt english.srt --model large-v3 --translate
+python Adding-subtitle-plus-manual-correction-translation.py generate --input video.mp4 --output_srt english.srt --model large-v3 --translate
 ```
 
 ### Add Subtitles to Video
 
 ```bash
 # Add Japanese subtitles
-python subtitle-generator.py add --input video.mp4 --output_video video_jp_sub.mp4 --input_srt japanese.srt
+python Adding-subtitle-plus-manual-correction-translation.py add --input video.mp4 --output_video video_jp_sub.mp4 --input_srt japanese.srt
 
 # Add English subtitles
-python subtitle-generator.py add --input video.mp4 --output_video video_en_sub.mp4 --input_srt english.srt
+python Adding-subtitle-plus-manual-correction-translation.py add --input video.mp4 --output_video video_en_sub.mp4 --input_srt english.srt
 ```
 
 ### Available Whisper Models
